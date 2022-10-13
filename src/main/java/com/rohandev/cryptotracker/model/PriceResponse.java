@@ -8,7 +8,7 @@ public class PriceResponse {
 
     private String url;
     private String next;
-    private int count;
+    private Long count;
     private List<CoinPrice> data;
 
     public String getUrl() {
@@ -27,11 +27,11 @@ public class PriceResponse {
         this.next = next;
     }
 
-    public int getCount() {
+    public Long getCount() {
         return count;
     }
 
-    public void setCount(int count) {
+    public void setCount(Long count) {
         this.count = count;
     }
 

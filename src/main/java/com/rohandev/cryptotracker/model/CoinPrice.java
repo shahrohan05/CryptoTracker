@@ -1,5 +1,7 @@
 package com.rohandev.cryptotracker.model;
 
+import com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder;
+
 import javax.persistence.*;
 import java.time.Instant;
 
@@ -20,6 +22,14 @@ public class CoinPrice {
     @Column(name = "timestamp")
     private Instant timestamp;
 
+    public CoinPrice() {
+    }
+
+    public CoinPrice(String coin, Double price, Instant timestamp) {
+        this.coin = coin;
+        this.price = price;
+        this.timestamp = timestamp;
+    }
 
     public Double getPrice() {
         return price;

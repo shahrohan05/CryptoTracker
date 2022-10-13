@@ -21,8 +21,8 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
     implementation 'io.github.cdimascio:dotenv-java:2.2.4'
-    // https://mvnrepository.com/artifact/com.sun.mail/jakarta.mail
-    implementation group: 'com.sun.mail', name: 'jakarta.mail', version: '2.0.1'
+    // https://mvnrepository.com/artifact/com.sun.mail/javax.mail
+    implementation group: 'com.sun.mail', name: 'javax.mail', version: '1.6.2'
 
     runtimeOnly 'com.h2database:h2'
 
