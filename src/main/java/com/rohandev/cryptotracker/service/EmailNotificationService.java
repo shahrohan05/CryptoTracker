@@ -68,14 +68,10 @@ public class EmailNotificationService {
     private String getMessage(Double price, Double minPrice, Double maxPrice) {
         if (price < minPrice) {
             return String.format(MSG_TEMPLATE, coinId.toUpperCase(), "below", minPrice, currency.toUpperCase(), "buy", price, currency.toUpperCase(), projectName);
-            /*"Hi there, \n\n"+coinId.toUpperCase()+" price just went below "+minPrice+" "+currency.toUpperCase()+". Time to buy! \n\n "
-                    +"\nCurrent price - "+price+" "+currency.toUpperCase()
-                    +"\n\nWarm Regards,\n"+projectName;*/
+
         } else if (price > maxPrice) {
             return String.format(MSG_TEMPLATE, coinId.toUpperCase(), "above", maxPrice, currency.toUpperCase(), "buy", price, currency.toUpperCase(), projectName);
-                    /*"Hi there, \n\n"+coinId.toUpperCase()+" price just went above "+maxPrice+" "+currency.toUpperCase()+". Time to sell! \n\n "
-                    +"\nCurrent price - "+price+" "+currency.toUpperCase()
-                    +"\n\nRegards,\n"+projectName;*/
+
         }
         return null;
     }
