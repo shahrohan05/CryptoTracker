@@ -14,11 +14,23 @@ public class CoinGeckoService {
     @Value("${crypto-tracker.coin-id}")
     private String coinId;
 
+    public void setCoinId(String coinId) {
+        this.coinId = coinId;
+    }
+
     @Value("${crypto-tracker.currency}")
     private String currency;
 
+    public void setCurrency(String currency) {
+        this.currency = currency;
+    }
+
     @Autowired
     CoinGeckoFeignClient coinGeckoFeignClient;
+
+    public void setCoinGeckoFeignClient(CoinGeckoFeignClient coinGeckoFeignClient) {
+        this.coinGeckoFeignClient = coinGeckoFeignClient;
+    }
 
     /**
      * Get coin price from gecko api, based on the coin id and currency defined in the following properties -
