@@ -19,4 +19,4 @@ Java Springboot based REST API app that continuously monitors the price of Bitco
 4. Hit the following endpoint to get found prices from DB - 
    <br>```curl --location --request GET 'http://localhost:8080/api/prices/btc?date=<DATE>&offset=0&limit=100'```
    <br>**[OR]**
-   <br> Use this <link href = "https://github.com/shahrohan05/CryptoTracker/blob/master/CryptoTracker.postman_collection.json"> postman collection </link>
+   <br> Use this [postman collection](https://github.com/shahrohan05/CryptoTracker/blob/master/CryptoTracker.postman_collection.json)
